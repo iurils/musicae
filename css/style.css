@@ -1,0 +1,42 @@
+header{
+    background-color: rgb(191, 202, 198);
+    height: 70px;
+}
+img#logo{
+    width: 120px;
+    height: 60px;
+    left: 1200px;
+    top: 12px;
+    position: absolute;
+    
+}
+
+nav#menu{
+    display: inline;
+    
+}
+ul#menu{
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    left: auto;
+}
+ul#menu li{
+    display: inline;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.horizontal1{
+    background-color: #ff2f60;
+    border: solid 1px black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ind{
+    background: linear-gradient(to right, #002f60, #ff2f60);
+    display: flex;
+    justify-content: space-evenly;
+}
