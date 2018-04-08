@@ -4,89 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nova música velha</title>
+    <title>Musicae</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
 </head>
 <body>
     <header>
         <nav id="menu">
-            <ul id="menu">
-                <li><a href="">Início</a></li>
-                <li><a href="">Lançamentos</a></li>
-                <li><a href="">Gêneros</a></li>
-                <li><a href="">Sobre nós</a></li>
+            <ul id="nav1">
+                <li>
+                    <a href="">Início</a>
+                </li>
+                <li>
+                    <a href="">Lançamentos</a>
+                </li>
+                <li class="generos">
+                    <a href="#" class="gbtn">Gêneros</a>
+                    <div class="subg">
+                        <a href="#">Nacional</a>
+                        <a href="#">Internacional</a>
+                        <a href="#">Gospel</a>
+                        <a href="#">Rock</a>
+                        <a href="#">MPB</a>
+                        <a href="#">Rap</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
             </ul>
         </nav>
-        <img id="logo" src="img/logo.png" alt="LOGOTIPO">
+        <form >
+            <input type="text">
+        </form>
+        <a href="">
+            <img id="logo" class="right" src="img/logo.png" alt="LOGOTIPO" />
+        </a>
     </header>
     <section>
-        <div id="intro">
+        <div>
             <h2>
-                "Música boa é a música antiga? Nem sempre, aqui no/a ... você descubre o que rola de novo no cenário musical ao redor do mundo"
+                Música boa é a música antiga? Nem sempre!
             </h2>
         </div>
-        <div id="ind">
-            <h3>Indicações</h3>
+        <div id="dest">
+            <h3>Destaques</h3>
         </div>
-        <div class="horizontal1">
+        <div class="horizontal1">            
+            <div class="over">
+                <a href="">
+                    <img  class="image" src="img/oterno.jpg" width="205" height="auto" alt="O terno" />
+                    
+                    <div class="text">
+                        <p class="text1">
+                            O Terno, banda paulista de rock psicodélico.
+                        </p>
+                    </div>
+                </a>
+                
+            </div>      
             
-            <div>
-                <a href=""><img  id="terno" src="img/oterno.jpg" width="205" height="180" alt="O terno" /></a>
-                <p>
-                    O Terno, banda paulista de rock psicodélico.
-                </p>
-            </div>                
-            <div>
-               <a href=""><img id="marco" src="img/marco.jpg" width="205" height="180" alt="Marco mengoni" /></a> 
-                <p>
-                    Marco mengoni, cantor de pop-rock.
-                </p>
+            <div class="over">
+                <a href="">
+                    <img class="image" src="img/marco.jpg" width="205" height="auto" alt="Marco mengoni" />
+                    
+                    <div class="text">
+                        <p class="text1">
+                            Marco mengoni, cantor de pop-rock.
+                        </p>
+                    </div> 
+                </a>
+                
             </div>
             
             
-            <div>
-                <a href=""><img id="g3" src="img/g3.jpg" width="205" height="180" alt="Oficina G3" /></a>
-                <p>
-                    Oficina G3, banda de rock cristão.
-                </p>
+            <div class="over">
+                <a href="">
+                    <img class="image" src="img/g3.jpg" width="205" height="auto" alt="Oficina G3" />
+                    <div class="text">
+                        <p class="text1">
+                            Oficina G3, banda de rock cristão.
+                        </p>
+                    </div>
+                </a>
             </div>    
             
             
             
         </div>
         
-        <div class="horizontal2">
+        <div id="not">
             <h3>Últimas notícias</h3>
-            <img src="" alt="banda1">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ligula, ultricies quis convallis vitae, aliquet euismod odio. Mauris et tincidunt est.
-                
-            </p>
+        </div>
+        <div class="horizontal2">            
+            <div class="over">
+                <a href="">
+                    <img class="image2" src="img/tom.jpg" width="270" height="auto" alt="Tom Zé">
+                    <div class="text"> 
+                        <p class="text1">
+                            "Tom Zé é um medroso e não fala mais de política", diz músico baiano.                        
+                        </p>
+                    </div>
+                </a>
+            </div>
             
-            <img src="" alt="banda2">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ligula, ultricies quis convallis vitae, aliquet euismod odio. Mauris et tincidunt est.
-            </p>
+            <div class="over">
+                <a href="">
+                    <img class="image2" src="img/abacaxepa.jpg" width="250" height="auto" alt="Abacaxepa">
+                    <div class="text"> 
+                        <p class="text1">
+                            A banda paulista Abacaxepa faz show de lançamento do primeiro EP.
+                        </p>
+                    </div>
+                </a>
+            </div>
             
-            <img src="" alt="banda3">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ligula, ultricies quis convallis vitae, aliquet euismod odio. Mauris et tincidunt est.
-            </p>    
-            
-            FOTO
-            TEXTO 
-            FOTO
-            TEXTO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ligula, ultricies quis convallis vitae, aliquet euismod odio. Mauris et tincidunt est.
-            FOTO
-            TEXTO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ligula, ultricies quis convallis vitae, aliquet euismod odio. Mauris et tincidunt est.
+            <div class="over">
+                <a href="">
+                    <img class="image2" src="img/camila.jpg" width="280" height="auto" alt="Camila Brumatti">
+                    <div class="text">
+                        <p class="text1">
+                            Camila Brumatti faz campanha no Catarse para financiar LP Transitória.
+                        </p>
+                    </div>
+                </a>    
+            </div>            
         </div>
         
         
         
     </section>
     <footer>
-        CONTATO
+        <nav id="contato">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <img src="img/face.png" width="25" height="25" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com">
+                        <img src="img/insta.png" width="25" height="25" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com">
+                        <img src="img/yt.png" width="35" height="30" alt="Youtube">
+                    </a>
+                </li>
+                <li>
+                    <p>
+                        Av. Paulista, 1374 - Bela Vista São Paulo SP 01310-100
+                        (11) 9999-9999
+                    </p>
+                </li>
+            </ul>            
+        </nav>
+        
+        
         
     </footer>
     
