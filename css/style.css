@@ -1,11 +1,10 @@
+/*Configuração do cabeçalho*/
 header{
-    background-color: rgb(232, 236, 235);
+    background-color: #e8eceb;
     height: 70px;
     display: flex;
 }
 img#logo{
-    width: 120px;
-    height: 60px;
     left: 1200px;
     top: 12px;
 }
@@ -26,7 +25,7 @@ img#logo{
 }
 
 #nav1 li a{
-    background-color: rgb(232, 236, 235);
+    background-color: #e8eceb;
     color-interpolation-filters: linearRGB;
     padding: 10px;
     margin: 0px 10px 0px 10px;
@@ -34,32 +33,6 @@ img#logo{
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
 }
-
-input{
-    width: 600px;    
-    border: 2px solid rgb(231, 235, 234);
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: whitesmoke;
-    padding: 6px 20px 6px 20px;
-    position: absolute;
-    left: 550px;
-    top: 4%;
-    
-}
-
-input:focus{
-    width: 600px;
-}
-
-h2{
-    margin: auto;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-}
-
 .subg{
     display: none;
     position: absolute;
@@ -81,10 +54,37 @@ h2{
     display: block;
     text-align: left;
 }
-
 .generos:hover .subg{
     display: block;
 }
+input{
+    width: 600px;    
+    border: 2px solid rgb(231, 235, 234);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    padding: 6px 20px 6px 20px;
+    position: absolute;
+    left: 550px;
+    top: 4%;
+    
+}
+
+input:focus{
+    width: 600px;
+}
+
+/*Configuração do corpo*/
+
+h2{
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
 
 .horizontal1{
     border: solid 1px black;
@@ -99,6 +99,8 @@ h2{
     justify-content: space-evenly;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    width: 200px;
+    color: #e8eceb;
 }
 
 .horizontal2{
@@ -114,6 +116,8 @@ h2{
     justify-content: space-evenly;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    width: 200px;
+    color: #e8eceb;
 }
 
 .over{
@@ -169,30 +173,24 @@ h2{
 }
 
 footer{
-    background-color: rgb(232, 236, 235);
-    height: 50px;
-}
-
-ul{
-    position: relative;
-    top: 10px;
-    border-left: auto;  
-    list-style: none;
     display: flex;
-}
-
-li a{
-    background-color: rgb(232, 236, 235);
-    padding: 10px;
-    margin: 0px 10px 0px 10px;
-    text-decoration: none; 
-}
-
-li p{
-    margin: 0px 10px 0px 10px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #002f60, #ff2f60);
     padding: 10px;
 }
-
+#social{
+    padding: 5px;
+}
+#endereco{
+    color:#e8eceb;
+    font-family: 'Oswald', sans-serif;
+    margin: 5px;
+}
+p#endereco{
+    margin: 0px;
+    text-align: center;
+}
 
 
 
