@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 /*Configuração do cabeçalho*/
+body{
+    background-image: url(../img/clave-fundo.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
 header{
-    background-color: #e8eceb;
     height: 70px;
     display: flex;
+    box-shadow: 0px 1px 5px hsla(346, 100%, 59%, 0.4);
 }
 img#logo{
-    left: 1200px;
+    left: 1150px;
     top: 12px;
 }
 
@@ -25,12 +32,13 @@ img#logo{
 }
 
 #nav1 li a{
-    background-color: #e8eceb;
     color-interpolation-filters: linearRGB;
-    padding: 10px;
+    padding: 5px;
     margin: 0px 10px 0px 10px;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
+    color: #002f60;
+    font-weight: bold;
     font-size: 15px;
 }
 .subg{
@@ -40,7 +48,6 @@ img#logo{
 }
 
 .gbtn{
-    background-color: rgb(232, 236, 235);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -58,7 +65,7 @@ img#logo{
     display: block;
 }
 input{
-    width: 600px;    
+    width: 500px;    
     border: 2px solid rgb(231, 235, 234);
     border-radius: 4px;
     font-size: 16px;
@@ -71,10 +78,21 @@ input{
 }
 
 input:focus{
-    width: 600px;
+    width: 500px;
+}
+#menu li a:hover{
+    color: #ff2f60;
+    
+}
+.subg a:hover{
+    color: #ff2f60;
 }
 
 /*Configuração do corpo*/
+
+#clave{
+    
+}
 
 h2{
     margin: auto;
@@ -94,7 +112,7 @@ h2{
 }
 
 #dest{
-    background: linear-gradient(to right, #002f60, #ff2f60);
+    background: linear-gradient(to right, #002f60, #fe2d5e);
     display: flex;
     justify-content: space-evenly;
     font-family: 'Oswald', sans-serif;
@@ -170,6 +188,7 @@ h2{
     color: whitesmoke;
     font-size: 16px;
     padding: 16px 32px;
+    font-family: 'Open Sans Condensed', sans-serif; 
 }
 
 footer{
