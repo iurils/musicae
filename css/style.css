@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
-/*Configuração do cabeçalho*/
+/* config de cabeçalho*/
 body{
     background-image: url(../img/clave-fundo.png);
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ input:focus{
     color: #ff2f60;
 }
 
-/*Configuração do corpo*/
+/*config do corpo*/
 
 h2{
     margin: auto;
