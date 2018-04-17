@@ -1,10 +1,15 @@
-let titulo =  document.getElementById("titulo");
+let h2 = document.getElementById("teste");
+let texto = "Música boa é a música antiga? Nem sempre!";
 
-function digitar(){
-titulo.innerHTML = "Nem sempre!";
+
+function digitar (string, element) {
+    let escrever = string.split ("").reverse();
+    let timmer = setInterval(function () {
+        if (!escrever.length) return clearInterval(timmer);
+        let prox = escrever.pop();
+        element.innerHTML += prox;        
+    }, 80)
 }
-function aparecer(){
-    digitar()
-    titulo.style.transform = "translateX(0)"
-}
-aparecer()
+
+digitar (texto, h2);
+
