@@ -4,7 +4,7 @@
 body{
     background-image: url(../img/clave-fundo.png);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-attachment: fixed;
 }
 header{
     height: 70px;
@@ -21,7 +21,7 @@ img#logo{
     right: 0px;
     width: 120px;
 }
-
+/* Configuração do menú*/
 #menu ul{
     position: absolute;
     top: 20px;
@@ -64,6 +64,7 @@ img#logo{
 .generos:hover .subg{
     display: block;
 }
+/* Configuração da barra de pesquisa */
 input{
     width: 500px;    
     border: 2px solid rgb(231, 235, 234);
@@ -89,7 +90,6 @@ input:focus{
 }
 
 /*config do corpo*/
-
 h2{
     margin: auto;
     padding: 10px;
@@ -97,16 +97,18 @@ h2{
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
 }
+h2 span#titulo{
+    transform: translateX(300%);
+    transition: 1s;
+}
 
-
-
+/* Configuração da div 'Destaques'*/
 .horizontal1{
     border: solid 1px black;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
-
 #dest{
     background: linear-gradient(to right, #002f60, #fe2d5e);
     display: flex;
@@ -116,25 +118,7 @@ h2{
     width: 200px;
     color: #e8eceb;
 }
-
-.horizontal2{
-    border: solid 1px black;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#not{
-    background: linear-gradient(to right, #002f60, #ff2f60);
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    width: 200px;
-    color: #e8eceb;
-}
-
-.over{
+.hor1{
     position: relative;
     width: 100%;
 }
@@ -147,46 +131,101 @@ h2{
     transition: 0.5s ease;
     backface-visibility: hidden;
 }
-
-.image2{
-    opacity: 1;
-    display: block;
-    width: 80%;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
+.hor1:hover .image{
+    opacity: 0.3;
 }
 
-.text{
+/* Formatação das legendas e textos*/
+.texto{
+    background-color: #444444;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 20%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(90%, -100%);
+}
+.botao-mais{
+    position: relative;
+    left: 90%;
+    background-color: #ff2f60;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.legenda1,.legenda2{
+    background-color: #002f60;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.legenda1{
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
-    -ms-transform: translate(-50%, 50%);
+    transform: translate(-10%, 200%);
+}
+.legenda2{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(25%, -100%); 
+    
+    /*Não me pergunte o motivo dessa configuração ser 
+    diferente, não vou saber responder UU 
+    Me limito a dizer apenas uma coisa BUG DO CSS*/
 }
 
-.over:hover .image{
-    opacity: 0.3;
+.hor1:hover .legenda1{
+    opacity: 1;
 }
-
-.over:hover .image2{
-    opacity: 0.3;
+.hor2:hover .legenda2{
+    opacity: 1;
 }
-
-.over:hover .text{
+.hor2:hover .texto{
     opacity: 1;
 }
 
-.text1{
-    background-color: #002f60;
-    color: whitesmoke;
-    font-size: 16px;
-    padding: 16px 32px;
-    font-family: 'Open Sans Condensed', sans-serif; 
+/*Configuração da div 'Notícias'*/
+.horizontal2{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#not{
+    background: linear-gradient(to right, #002f60, #ff2f60);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    color: #e8eceb;
 }
 
+.image2{
+    opacity: 1;
+    display: block;
+    width: 40%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    padding: 5px;
+}
+.hor2:hover .image2{
+    opacity: 0.3;
+}
+
+/* Configuração do rodapé */
 footer{
     display: flex;
     flex-direction: column;

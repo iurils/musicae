@@ -11,6 +11,8 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
+    
+    <!-- Configuração do menú -->
     <header>
         <nav id="menu">
             <ul id="nav1">
@@ -39,6 +41,7 @@
                 </li>
             </ul>
         </nav>
+        <!-- Caixa de pesquisa -->
         <form >
             <input type="text" placeholder="Procure por gêneros, artistas, etc...">
         </form>
@@ -46,117 +49,125 @@
             <img id="logo" class="right" src="img/logo120px.png" alt="LOGOTIPO" />
         </a>
     </header>
+    
     <br><br>
+    
+    <!-- Configuração do corpo -->
     <section>
         <div>
             <h2>
-                Música boa é a música antiga? Nem sempre!
+                <span>"Música boa é a música antiga? </span>
+                <span id="titulo"></span>
             </h2>
         </div>
         
         <br><br><br>
         
+        <!-- Seção dos Destaques -->
         <div id="dest">
             <h3>Destaques</h3>
         </div>
-        
         <div class="horizontal1">            
-            <div class="over">
+            <div class="hor1">
                 <a href="">
-                    <img  class="image" src="img/oterno.jpg" width="205" height="auto" alt="O Terno" />
-                    
-                    <div class="text">
-                        <p class="text1">
-                            O Terno, banda paulista de rock psicodélico.
-                        </p>
-                    </div>
+                    <img  class="image" src="img/oterno.jpg" width="205" height="auto" alt="O Terno"/>
+                    <p class="legenda1">
+                        O Terno, banda paulista de rock psicodélico.
+                    </p>
                 </a>
             </div>      
             
-            <div class="over">
+            <div class="hor1">
                 <a href="">
-                    <img class="image" src="img/marco.jpg" width="205" height="auto" alt="Marco Mengoni" />
-                    
-                    <div class="text">
-                        <p class="text1">
-                            Marco mengoni, cantor de pop-rock.
-                        </p>
-                    </div> 
+                    <img class="image" src="img/marco.jpg" width="205" height="auto" alt="Marco Mengoni"/>
+                    <p class="legenda1">
+                        Marco Mengoni, cantor italiano de pop-rock.
+                    </p>
                 </a>
             </div>
             
-            <div class="over">
+            <div class="hor1">
                 <a href="">
-                    <img class="image" src="img/g3.jpg" width="205" height="auto" alt="Oficina G3" />
-                    <div class="text">
-                        <p class="text1">
-                            Oficina G3, banda de rock cristão.
-                        </p>
-                    </div>
+                    <img class="image" src="img/g3.jpg" width="205" height="auto" alt="Oficina G3"/>
+                    <p class="legenda1">
+                        Oficina G3, banda de rock cristão.
+                    </p>
                 </a>
             </div> 
         </div>
         
         <br><br><br>
         
+        <!-- Seção Notícias-->
         <div id="not">
             <h3>Últimas notícias</h3>
         </div>
-        
         <div class="horizontal2">            
-            <div class="over">
+            <div class="hor2">
                 <a href="">
                     <img class="image2" src="img/tom.jpg" width="270" height="auto" alt="Tom Zé">
-                    <div class="text"> 
-                        <p class="text1">
-                            "Tom Zé é um medroso e não fala mais de política", diz músico baiano.                        
+                    <p class="legenda2">
+                        "Tom Zé é um medroso e não fala mais de política", <br>diz músico baiano. 
+                    </p>
+                    <div class="texto">
+                        <h3> A mulher do músico lia </h3>
+                        <p class="">
+                            as cerca de 3 milhões de mensagens de ódio endereçadas a ele. “Era como se a porta estivesse cheia de gente para jogar pedra em mim”, diz Tom Zé.
                         </p>
+                        <button class="botao-mais">Mais...</button>
                     </div>
                 </a>
             </div>
             
-            <div class="over">
+            <div class="hor2">
                 <a href="">
                     <img class="image2" src="img/abacaxepa.jpg" width="250" height="auto" alt="Abacaxepa">
-                    <div class="text"> 
-                        <p class="text1">
-                            A banda paulista Abacaxepa faz show de lançamento do primeiro EP.
+                    <p class="legenda2">
+                        A banda paulista Abacaxepa faz show <br>de lançamento do primeiro EP.
+                    </p>
+                    <div class="texto">
+                        <h3>Criada em 2016,</h1>
+                            <p> a banda paulista de MPB lança seu primeiro EP, homônimo, com influências que vão do rock ao samba.
+                            </p>
+                            <button class="botao-mais">Mais...</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="hor2">
+                    <a href="">
+                        <img class="image2" src="img/camila.jpg" width="280" height="auto" alt="Camila Brumatti">
+                        <p class="legenda2">
+                            Camila Brumatti faz campanha no Catarse <br>para financiar LP Transitória.
                         </p>
+                        <div class="texto">
+                            <h3>Lorem ipsum dolor sit amet,</h1>
+                                <p>consectetur adipiscing elit. Praesent pellentesque, risus sit amet sollicitudin consequat, ex enim lobortis justo, eget eleifend orci justo id ligula. Vivamus purus arcu, commodo id ante vitae, lobortis lacinia nulla.
+                                </p>
+                                <button class="botao-mais">Mais...</button>
+                            </div>
+                        </a>    
                     </div>
-                </a>
-            </div>
-            
-            <div class="over">
-                <a href="">
-                    <img class="image2" src="img/camila.jpg" width="280" height="auto" alt="Camila Brumatti">
-                    <div class="text">
-                        <p class="text1">
-                            Camila Brumatti faz campanha no Catarse para financiar LP Transitória.
-                        </p>
+                </section>
+                
+                <br><br><br><br>
+                
+                <!-- Rodapé -->
+                <footer>
+                    <div id="social">
+                        <a href="http://www.facebook.com">
+                            <img id="face" src="img/face50p.png" alt="Facebook">
+                        </a>
+                        <a href="http://www.instagram.com">
+                            <img id="insta" src="img/insta50p.png" alt="Instagram">
+                        </a>
+                        <a href="http://www.youtube.com">
+                            <img id="youtube" src="img/youtube50p.png" alt="Youtube">
+                        </a>
                     </div>
-                </a>    
-            </div>            
-        </div>
-    </section>
-    
-    <br><br><br><br>
-    
-    <footer>
-        <div id="social">
-            <a href="http://www.facebook.com">
-                <img id="face" src="img/face50p.png" alt="Facebook">
-            </a>
-            <a href="http://www.instagram.com">
-                <img id="insta" src="img/insta50p.png" alt="Instagram">
-            </a>
-            <a href="http://www.youtube.com">
-                <img id="youtube" src="img/youtube50p.png" alt="Youtube">
-            </a>
-        </div>
-        
-        <div id="endereco">
-            <p id="endereco">Av. Paulista, 1374 - Bela Vista São Paulo SP 01310-100 <br> (11) 9999-9999</p>
-        </div>
-    </footer>
-</body>
-</html>
+                    
+                    <div id="endereco">
+                        <p id="endereco">Av. Paulista, 1374 - Bela Vista São Paulo SP 01310-100 <br> (11) 9999-9999</p>
+                    </div>
+                </footer>
+            </body>
+            </html>
